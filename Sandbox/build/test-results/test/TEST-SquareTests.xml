@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SquareTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-25T13:07:55" hostname="user-B365MHD3" time="0.004">
+<testsuite name="SquareTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-25T17:16:27" hostname="user-B365MHD3" time="0.003">
   <properties/>
-  <testcase name="testArea" classname="SquareTests" time="0.004"/>
+  <testcase name="testArea" classname="SquareTests" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
