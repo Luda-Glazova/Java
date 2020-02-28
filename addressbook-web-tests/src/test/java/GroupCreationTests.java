@@ -40,7 +40,7 @@ public class GroupCreationTests {
 
       gotoGroupPage();
       initGroupCreation();
-      fillGroupForm();
+      fillGroupForm(new GroupData("test1", "test2", "test3"));
       submitGroupCreation();
       returnToGroupPage();
     }
@@ -53,17 +53,17 @@ public class GroupCreationTests {
     driver.findElement(By.name("submit")).click();
   }
 
-  private void fillGroupForm() {
+  private void fillGroupForm(GroupData groupData) {
     driver.findElement(By.name("group_name")).click();
     driver.findElement(By.name("group_name")).clear();
-    driver.findElement(By.name("group_name")).sendKeys("test1");
+    driver.findElement(By.name("group_name")).sendKeys(groupData.getName());
     driver.findElement(By.name("group_header")).click();
     driver.findElement(By.name("group_header")).clear();
-    driver.findElement(By.name("group_header")).sendKeys("test2");
+    driver.findElement(By.name("group_header")).sendKeys(groupData.getHeader());
     driver.findElement(By.xpath("//form[@action='/addressbook/group.php']")).click();
     driver.findElement(By.name("group_footer")).click();
     driver.findElement(By.name("group_footer")).clear();
-    driver.findElement(By.name("group_footer")).sendKeys("test3");
+    driver.findElement(By.name("group_footer")).sendKeys(groupData.getFooter());
   }
 
   private void initGroupCreation() {
