@@ -7,8 +7,8 @@ repositories {
 dependencies {
     implementation 'org.testng:testng:7.1.0'
     compile 'org.testng:testng:7.1.0'
-    compile 'org.seleniumhq.selenium:selenium-java:2.48.2'
-    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    compile 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-6'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-6'
 }
 
 test {
